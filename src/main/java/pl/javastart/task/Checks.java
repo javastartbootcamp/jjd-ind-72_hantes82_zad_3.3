@@ -7,17 +7,11 @@ public class Checks {
     //metoda power, która przyjmuje jako argument liczbę całkowitą i zwraca jej kwadrat (tę liczbę podniesioną do drugiej potęgi).
 
     boolean isEven(int number) {
-        if (number % 2 == 0) {
-            return true;
-        }
-        return false;
+        return number % 2 == 0;
     }
 
     boolean isOdd(int number) {
-        if (number % 2 != 0) {
-            return true;
-        }
-        return false;
+        return number % 2 != 0;
     }
 
     double circleField(int radius) {
@@ -27,7 +21,6 @@ public class Checks {
     }
 
     double power(int number) {
-
         double result = Math.pow(number, 2);
         return result;
     }
